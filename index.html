@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: blue;
+            background-color: lightgray;
+            font-size: 16px;
+            border: 1px solid black;
+        }
+        .highlight {
+            color: red;
+            background-color: yellow;
+            font-weight: bold;
+            border: 2px dashed green;
+        }
+        #special {
+            color: white;
+            background-color: aquamarine;
+            font-size: 20px;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Specificity</h1>
+        <p>This paragraph uses the element selector for styling (blue text, lightgray background).</p>
+        <p class="highlight">This paragraph uses the class selector "highlight" (red text, yellow background).</p>
+        <p id="special">This paragraph uses the ID selector "special" (white text, purple background).</p>
+        <p style="background-color: lightblue; border: 2px solid orange;">This paragraph uses an inline style for background and border.</p>
+        <p id="special" class="highlight" style="font-size: 24px; color: green;">
+            This paragraph combines ID, class, and inline styles (green text from inline).
+        </p>
+    </div>
+</body>
+</html>
